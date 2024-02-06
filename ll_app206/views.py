@@ -23,7 +23,7 @@ def book(request):
     return render(request, 'book.html', context)
 
 # Add code for the bookings() view > lab2: Step8
-# _______________________________
+# _______________________________ good output to reservations html 0206
 def bookings(request):
     date = request.GET.get('date', datetime.today().date())
     bookings = Booking.objects.all().filter(reservation_date=date)

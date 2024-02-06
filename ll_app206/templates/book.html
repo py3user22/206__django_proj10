@@ -27,12 +27,17 @@
             ex1.. Booking.objects.filter(type="date");
 -->
 <script>
-    document.write("Hola Mundo <br><br><br> ");
+    var hello1 = "Hola Mundo 0206 <br><br><br>"
+    document.write(hello1);
 </script>
 
         <!--note: ex1.
              id="use_id" for search
 .getElementById("use_id")
+
+bookings = Booking.objects.all().filter(reservation_date=date)
+var booking_json = "{{ booking_json }}";
+var booking_par2 = JSON.parse(booking_json);
          -->
 <script>
 
@@ -40,14 +45,10 @@
     var str2 = "id_reservation_date";
     var str3 = "id_reservation_slot";
 
-    var booking_json = "{{ booking_json }}";
-    var booking_par2 = JSON.parse(booking_json);
-
     var output = document.getElementById(str2);
 
-    alert(output);
-    output.innerHTML = "Reserve date: " + booking.reservation_date;
 
+    output.innerHTML = "Reserve date: " + booking.reservation_date;
 
 </script>
 
