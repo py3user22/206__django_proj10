@@ -5,7 +5,9 @@
 <section>
   <article>
     <!-- Add your code in the line below  -->
-    <h1> <!--Add title here --> </h1>
+    <h1> <!--Add title here -->
+        Make a reservation
+    </h1>
 
     <!--Begin row-->
     <div class="row">
@@ -19,6 +21,43 @@
       </div>
       <!--End col-->
 
+
+      <!-- Add your code inside the script tags below  -->
+<!-- lab2, step11
+            ex1.. Booking.objects.filter(type="date");
+-->
+<script>
+    document.write("Hola Mundo <br><br><br> ");
+</script>
+
+        <!--note: ex1.
+             id="use_id" for search
+.getElementById("use_id")
+         -->
+<script>
+
+    var str1 = "id_first_name";
+    var str2 = "id_reservation_date";
+    var str3 = "id_reservation_slot";
+
+    var booking_json = "{{ booking_json }}";
+    var booking_par2 = JSON.parse(booking_json);
+
+    var output = document.getElementById(str2);
+
+    alert(output);
+    output.innerHTML = "Reserve date: " + booking.reservation_date;
+
+
+</script>
+
+
+
+
+
+
+
+
       <!--Begin col-->
       <div class="column">
         <div class="videowrap">
@@ -31,15 +70,21 @@
       <!--End col-->
     </div>
     <!--End row-->
-
-
-
-
   </article>
 </section>
+
+
 <!-- Add your code inside the script tags below  -->
+<!-- lab2, step11
+            ex1.. Booking.objects.filter(type="date");
+-->
 <script>
-  
+    document.write("Hola Mundo");
+    var str1 = "id_reservation_date";
+    var get1 = document.getElementById(str1);
+    console.log(get1);
 </script>
+
+
 {% endblock %}
 
