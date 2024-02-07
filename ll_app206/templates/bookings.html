@@ -27,7 +27,8 @@
 <!-- Add your code inside the script tags below  -->
 <!-- lab2, step13 create const and parse() function -->
 <script>
-      const bookings = JSON.parse('{{bookings|safe}}');
+      var bookingsV = "{{ bookings|safe }}";
+      const bookings = JSON.parse(bookingsV);
       console.log(bookings);
 
       const pretty_json = JSON.stringify(bookings, null, 2);
